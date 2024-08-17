@@ -63,10 +63,10 @@ const Quiz = () => {
         const nextQuestion = currentQuestion + 1;
         const isCorrect = option === questions[currentQuestion].answer;
         const newScore = isCorrect ? score + 1 : score;
-        
-        setUserAnswers([...userAnswers, { 
-            question: questions[currentQuestion].question, 
-            selectedAnswer: option, 
+
+        setUserAnswers([...userAnswers, {
+            question: questions[currentQuestion].question,
+            selectedAnswer: option,
             correctAnswer: questions[currentQuestion].answer,
             isCorrect: isCorrect
         }]);
@@ -79,7 +79,13 @@ const Quiz = () => {
         }
     };
 
-    return (
+    return (<div>
+
+        {/* Banner Section */}
+        <div className="banner" style={{ backgroundImage: `url(assets/quiz.jpg)` }}>
+            <div className="banner-overlay"></div>
+            <h1 className="banner-text">Quiz</h1>
+        </div>
         <div id="quiz">
             <h2>Cybersecurity Quiz</h2>
             {showScore ? (
@@ -91,7 +97,7 @@ const Quiz = () => {
                             <li key={index}>
                                 <strong>Question:</strong> {answer.question}
                                 <br />
-                                <strong>Your Answer:</strong> {answer.selectedAnswer} 
+                                <strong>Your Answer:</strong> {answer.selectedAnswer}
                                 {answer.isCorrect ? (
                                     <span style={{ color: 'green', marginLeft: '10px' }}>&#10004;</span>  // Checkmark symbol
                                 ) : (
@@ -112,7 +118,7 @@ const Quiz = () => {
                     ))}
                 </div>
             )}
-        </div>
+        </div></div>
     );
 };
 

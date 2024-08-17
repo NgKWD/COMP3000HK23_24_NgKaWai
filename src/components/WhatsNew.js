@@ -1,15 +1,13 @@
 import React from 'react';
-// import bannerImage from 'assets/whatsnew.jpeg'; // Adjust the path based on your folder structure
 
 const WhatsNew = () => {
     return (
         <div id="whats-new">
             {/* Banner Section */}
-            <div style={{ ...styles.banner, backgroundImage: `url(assets/whatsnew.jpeg)` }}>
-                <div style={styles.overlay}></div>
-                <h1 style={styles.bannerText}>What's New</h1>
+            <div className="banner" style={{ backgroundImage: `url(assets/whatsnew.jpeg)` }}>
+                <div className="banner-overlay"></div>
+                <h1 className="banner-text">What's New</h1>
             </div>
-            
             {/* Recent News Section */}
             <div style={styles.newsContent}>
                 <h2>Recent Cybersecurity News</h2>
@@ -37,34 +35,6 @@ const WhatsNew = () => {
 };
 
 const styles = {
-    banner: {
-        position: 'relative',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: '#fff',
-        padding: '150px 0',  // Increase padding for more height
-        textAlign: 'center',
-        marginBottom: '50px',
-        height: '500px',     // Explicit height setting for the banner
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    overlay: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black overlay
-        zIndex: 1,
-    },
-    bannerText: {
-        position: 'relative',
-        zIndex: 2,
-        fontSize: '48px',
-        margin: '0',
-    },
     newsContent: {
         padding: '0px 70px 70px 70px',
     }
