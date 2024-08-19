@@ -35,7 +35,7 @@ const Home = () => {
 
 const styles = {
     home: {
-        padding: '0px 70px 70px 70px',
+        padding: '20px 70px 70px 70px',
     }
 };
 export default Home;

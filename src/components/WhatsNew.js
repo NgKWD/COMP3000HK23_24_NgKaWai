@@ -36,7 +36,7 @@ const WhatsNew = () => {
 
 const styles = {
     newsContent: {
-        padding: '0px 70px 70px 70px',
+        padding: '20px 70px 70px 70px',
     }
 };
 
