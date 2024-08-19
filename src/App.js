@@ -9,6 +9,7 @@ import WhatsNew from './components/WhatsNew';
 import KnowledgeCentre from './components/KnowledgeCentre';
 import UsefulResources from './components/UsefulResources';
 import BestPractice from './components/BestPractice';
+import FrequentQA from './components/FrequentQA';
 import './styles/App.css';
 import './styles/style.css';
 
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/whats-new" element={<WhatsNew />} />
                     <Route path="/best-practice" element={<BestPractice />} />
                     <Route path="/knowledge-centre" element={<KnowledgeCentre />} />
+                    <Route path="/frequent-qa" element={<FrequentQA />} />
                     <Route path="/q-and-a" element={<QandA />} />
                     <Route path="/useful-resources" element={<UsefulResources />} />
                     <Route path="/quiz" element={<Quiz />} />
