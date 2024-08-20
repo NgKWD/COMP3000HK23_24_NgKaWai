@@ -52,9 +52,9 @@ const FrequentQA = () => {
 
     return (
         <div>
-            <div className="banner" style={{ backgroundImage: `url(assets/knowledgecentre.jpg)` }}>
+            <div className="banner" style={{ backgroundImage: `url(assets/faq.jpg)` }}>
                 <div className="banner-overlay"></div>
-                <h1 className="banner-text">Best Practice</h1>
+                <h1 className="banner-text">Frequently Asked Questions</h1>
             </div>
             <div style={styles.container}>
                 <h1 style={styles.heading}>Frequently Asked Questions</h1>
@@ -80,8 +80,8 @@ const FrequentQA = () => {
 
 const styles = {
     container: {
-        padding: '20px',
-        // padding: '20px 70px 70px 70px',
+        // padding: '20px',
+        padding: '20px 70px 70px 70px',
     },
     heading: {
         fontSize: '32px',
