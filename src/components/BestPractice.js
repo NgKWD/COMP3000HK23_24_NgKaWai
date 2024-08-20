@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
 import PasswordSec from './best-practice/PasswordSec';
-import styles from './styles';
 import Phishing from './best-practice/Phishing';
+import PersonalData from './best-practice/PersonalData';
+import styles from './styles';
+import SocialMedia from './best-practice/SocialMedia';
 
 const BestPractice = () => {
-    const [selectedSection, setSelectedSection] = useState('phishing');
+    const [selectedSection, setSelectedSection] = useState('phishing-summary');
+
+    const handleSubMenuClick = (section) => {
+        setSelectedSection(section);
+    };
 
     const renderContent = () => {
         switch (selectedSection) {
-            case 'phishing':
-                return (
-                    <Phishing />
-                );
-            case 'password-security':
-                return (
-                    <PasswordSec />
-                );
+            case 'yourself-phishing':
+                return <Phishing />;
+            case 'yourself-password':
+                return <PasswordSec />;
+            case 'yourself-data':
+                return <PersonalData />;
+            case 'yourself-social':
+                return <SocialMedia />;
             default:
-                return null;
+                return <Phishing />;
         }
     };
 
@@ -32,20 +38,56 @@ const BestPractice = () => {
                 {/* Left Menu */}
                 <div style={styles.menu}>
                     <ul style={styles.menuList}>
-                        <li style={styles.menuItem} onClick={() => setSelectedSection('phishing')}>
-                            <a href="#!" style={selectedSection === 'phishing' ? styles.activeMenuItem : null}>Recognize and Report Phishing</a>
-                        </li>
-                        <li style={styles.menuItem} onClick={() => setSelectedSection('password-security')}>
-                            <a href="#!" style={selectedSection === 'password-security' ? styles.activeMenuItem : null}>Password Security</a>
+                        <li style={styles.menuItem}>
+                            <div style={selectedSection.startsWith('yourself') ? styles.activeMenuItem : null}>
+                                Protect Yourself
+                            </div>
+                            <ul>
+                                <li
+                                    style={{
+                                        ...styles.subMenuItem,
+                                        color: selectedSection === 'yourself-phishing' ? '#007BFF' : '#000',
+                                    }}
+                                    onClick={() => handleSubMenuClick('yourself-phishing')}
+                                >
+                                    Recognize and Report Phishing
+                                </li>
+                                <li
+                                    style={{
+                                        ...styles.subMenuItem,
+                                        color: selectedSection === 'yourself-password' ? '#007BFF' : '#000',
+                                    }}
+                                    onClick={() => handleSubMenuClick('yourself-password')}
+                                >
+                                    Password Security
+                                </li>
+                                <li
+                                    style={{
+                                        ...styles.subMenuItem,
+                                        color: selectedSection === 'yourself-data' ? '#007BFF' : '#000',
+                                    }}
+                                    onClick={() => handleSubMenuClick('yourself-data')}
+                                >
+                                    Data Protection
+                                </li>
+                                <li
+                                    style={{
+                                        ...styles.subMenuItem,
+                                        color: selectedSection === 'yourself-social' ? '#007BFF' : '#000',
+                                    }}
+                                    onClick={() => handleSubMenuClick('yourself-social')}
+                                >
+                                    Safe Online Social Networking
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
 
                 {/* Content Section */}
-                <div style={styles.content}>
-                    {renderContent()}
-                </div>
-            </div></div>
+                <div style={styles.content}>{renderContent()}</div>
+            </div>
+        </div>
     );
 };
 

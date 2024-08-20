@@ -3,7 +3,7 @@ const styles = {
         display: 'flex',
     },
     menu: {
-        width: '300px',
+        width: '350px',
         padding: '20px',
         backgroundColor: '#f4f4f4',
         borderRight: '1px solid #ddd',
@@ -14,6 +14,18 @@ const styles = {
     },
     menuItem: {
         marginBottom: '15px',
+        cursor: 'pointer',
+        padding: '10px',
+        borderRadius: '5px',
+        transition: 'background-color 0.3s',
+    },
+    expandedMenuItem: {
+        backgroundColor: '#e0e0e0',
+    },
+    subMenuItem: {
+        marginLeft: '20px',
+        cursor: 'pointer',
+        padding: '5px 0',
     },
     activeMenuItem: {
         fontWeight: 'bold',
@@ -34,12 +46,12 @@ const styles = {
     subsubheading: {
         fontSize: '20px',
         marginTop: '15px',
-        textDecoration: "underline"
+        textDecoration: 'underline',
     },
     point: {
         fontSize: '16px',
         marginTop: '15px',
-        color: '#007BFF'
+        color: '#007BFF',
     },
     text: {
         marginBottom: '15px',
@@ -52,11 +64,12 @@ const styles = {
         padding: '0px 70px 70px 70px',
     },
     reference: {
-        color: "#808080",
-        fontStyle: "italic",
+        color: '#808080',
+        fontStyle: 'italic',
     },
     image: {
-        width: "600px"
-    }
+        width: '600px',
+    },
 };
+
 export default styles;
