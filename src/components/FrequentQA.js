@@ -81,7 +81,7 @@ const FrequentQA = () => {
 const styles = {
     container: {
         padding: '20px',
-        padding: '20px 70px 70px 70px',
+        // padding: '20px 70px 70px 70px',
     },
     heading: {
         fontSize: '32px',
