@@ -30,7 +30,7 @@ const BestPractice = () => {
     return (
         <div>
             {/* Banner Section */}
-            <div className="banner" style={{ backgroundImage: `url(assets/bestpractice.jpg)` }}>
+            <div className="banner" style={{ backgroundImage: `url(./assets/bestpractice.jpg)` }}>
                 <div className="banner-overlay"></div>
                 <h1 className="banner-text">Best Practice</h1>
             </div>
