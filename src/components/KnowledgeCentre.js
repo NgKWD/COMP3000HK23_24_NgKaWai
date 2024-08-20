@@ -10,7 +10,7 @@ const KnowledgeCentre = () => {
                 return (
                     <div style={styles.mainContent}>
                         <h2 style={styles.heading}>What is Information Security?</h2>
-                        <img src="${process.env.PUBLIC_URL}/assets/cia-diagram.jpg" alt="C-I-A Model Diagram" style={styles.image} />
+                        <img src={`${process.env.PUBLIC_URL}/assets/cia-diagram.jpg`} alt="C-I-A Model Diagram" style={styles.image} />
                         <p style={styles.text}>
                             Information is a vital asset for both individuals and businesses, making its protection crucial. Information Security involves safeguarding this valuable resource to ensure three core principles, often referred to as C-I-A:
                         </p>
