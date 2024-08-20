@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/COMP3000HK23_24_NgKaWai/static/css/main.2c163596.css",
-    "main.js": "/COMP3000HK23_24_NgKaWai/static/js/main.4c2803b1.js",
+    "main.js": "/COMP3000HK23_24_NgKaWai/static/js/main.a1ab7d8b.js",
     "index.html": "/COMP3000HK23_24_NgKaWai/index.html",
     "main.2c163596.css.map": "/COMP3000HK23_24_NgKaWai/static/css/main.2c163596.css.map",
-    "main.4c2803b1.js.map": "/COMP3000HK23_24_NgKaWai/static/js/main.4c2803b1.js.map"
+    "main.a1ab7d8b.js.map": "/COMP3000HK23_24_NgKaWai/static/js/main.a1ab7d8b.js.map"
   },
   "entrypoints": [
     "static/css/main.2c163596.css",
-    "static/js/main.4c2803b1.js"
+    "static/js/main.a1ab7d8b.js"
   ]
 }
