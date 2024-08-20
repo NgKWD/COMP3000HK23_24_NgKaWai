@@ -5,7 +5,7 @@ const UsefulResources = () => {
     return (
         <div>
             {/* Banner Section */}
-            <div className="banner" style={{ backgroundImage: `url(assets/usefulresources.jpg)` }}>
+            <div className="banner" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/usefulresources.jpg)` }}>
                 <div className="banner-overlay"></div>
                 <h1 className="banner-text">Useful Resources</h1>
             </div>

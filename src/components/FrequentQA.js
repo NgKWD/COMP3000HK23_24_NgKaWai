@@ -52,7 +52,7 @@ const FrequentQA = () => {
 
     return (
         <div>
-            <div className="banner" style={{ backgroundImage: `url(assets/faq.jpg)` }}>
+            <div className="banner" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/faq.jpg)` }}>
                 <div className="banner-overlay"></div>
                 <h1 className="banner-text">Frequently Asked Questions</h1>
             </div>

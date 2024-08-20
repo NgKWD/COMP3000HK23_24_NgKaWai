@@ -4,7 +4,7 @@ const WhatsNew = () => {
     return (
         <div id="whats-new">
             {/* Banner Section */}
-            <div className="banner" style={{ backgroundImage: `url(assets/whatsnew.jpeg)` }}>
+            <div className="banner" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/whatsnew.jpeg)` }}>
                 <div className="banner-overlay"></div>
                 <h1 className="banner-text">What's New</h1>
             </div>

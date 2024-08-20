@@ -19,7 +19,7 @@ const Phishing = () => {
             <p>
                 <strong>Smishing and Vishing: </strong>Involve the use of text messages and phone calls, respectively, to trick victims into revealing information or downloading malware.</p>
 
-            <img src="/assets/phishing-diagram.jpg" alt="Phishing Diagram" style={styles.image} />
+            <img src="${process.env.PUBLIC_URL}/assets/phishing-diagram.jpg" alt="Phishing Diagram" style={styles.image} />
             <br />
             <br />
             <div>

@@ -16,7 +16,7 @@ const QandA = () => {
     return (
         <div>
             {/* Banner Section */}
-            <div className="banner" style={{ backgroundImage: `url(assets/qa.jpg)` }}>
+            <div className="banner" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/qa.jpg)` }}>
                 <div className="banner-overlay"></div>
                 <h1 className="banner-text">Question and Answer</h1>
             </div>

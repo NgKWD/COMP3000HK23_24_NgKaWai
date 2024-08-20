@@ -124,7 +124,7 @@ const Quiz = () => {
 
     return (
         <div>
-            <div className="banner" style={{ backgroundImage: `url(assets/quiz.jpg)` }}>
+            <div className="banner" style={{ backgroundImage: `url${process.env.PUBLIC_URL}/(assets/quiz.jpg)` }}>
                 <div className="banner-overlay"></div>
                 <h1 className="banner-text">Quiz</h1>
             </div>
