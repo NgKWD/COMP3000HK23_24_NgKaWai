@@ -18,14 +18,14 @@ This project is supervised by **Dr. Ivy Wong**.
 ## How to Run the Program in Development
 ```bash
    git clone https://github.com/NgKWD/COMP3000HK23_24_NgKaWai.git
-   cd cyber-guardian
+   cd COMP3000HK23_24_NgKaWai
    npm install
    npm start
 ```
 ## How to Deploy in GitHub
 ```bash
    git clone https://github.com/NgKWD/COMP3000HK23_24_NgKaWai.git
-   cd cyber-guardian
+   cd COMP3000HK23_24_NgKaWai
    npm install
    npm run deploy
 ```
